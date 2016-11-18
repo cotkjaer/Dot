@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zbR-pp-t1I">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tap-->
+        <scene sceneID="Q0U-dF-AzN">
+            <objects>
+                <viewController id="zbR-pp-t1I" customClass="TapViewController" customModule="DotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fh4-2F-KTJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="I6F-KL-Ebu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uv2-4C-BpO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Yv0-KO-2id" appends="YES" id="xn6-aX-nDd"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tap" id="Yet-Cz-ODu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YrC-6m-IKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Yv0-KO-2id">
+                    <connections>
+                        <action selector="handleTap:" destination="zbR-pp-t1I" id="bKi-8K-a0g"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="159" y="7"/>
+        </scene>
+    </scenes>
+</document>
