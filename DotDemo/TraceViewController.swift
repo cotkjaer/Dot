@@ -8,6 +8,7 @@
 
 import UIKit
 import Dot
+import Graphics
 
 class TraceViewController: UIViewController
 {

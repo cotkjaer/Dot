@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Graphics
 
 @IBDesignable
 open class DrawnLayerDotView: UIView

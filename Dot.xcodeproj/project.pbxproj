@@ -12,11 +12,9 @@
 		8F3488AD1DDDE369000E9A86 /* Animate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3488AC1DDDE369000E9A86 /* Animate.storyboard */; };
 		8F3488AF1DDDE537000E9A86 /* Trace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3488AE1DDDE537000E9A86 /* Trace.storyboard */; };
 		8F3488B11DDDE560000E9A86 /* TraceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3488B01DDDE560000E9A86 /* TraceViewController.swift */; };
-		8F3488B31DDDE7DB000E9A86 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3488B21DDDE7DB000E9A86 /* CGPoint.swift */; };
 		8F3488B51DDDECB6000E9A86 /* MaskDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3488B41DDDECB6000E9A86 /* MaskDot.swift */; };
 		8F4B05EE1DE5C03400FB045B /* DotLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05ED1DE5C03400FB045B /* DotLayer.swift */; };
 		8F4B05F01DE5C15200FB045B /* DrawnLayerDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05EF1DE5C15200FB045B /* DrawnLayerDotView.swift */; };
-		8F4B05F21DE5C1BE00FB045B /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05F11DE5C1BE00FB045B /* CGColor.swift */; };
 		8F4B05F41DE5CADE00FB045B /* ShapeDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05F31DE5CADE00FB045B /* ShapeDotView.swift */; };
 		8F4B05F61DE5DA9B00FB045B /* CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05F51DE5DA9B00FB045B /* CGPath.swift */; };
 		8F4B05F81DE639DF00FB045B /* DotLayerPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05F71DE639DF00FB045B /* DotLayerPathView.swift */; };
@@ -34,7 +32,6 @@
 		8FA88A3D1DDCA93F00A98DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA88A3C1DDCA93F00A98DC9 /* Assets.xcassets */; };
 		8FA88A401DDCA93F00A98DC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA88A3E1DDCA93F00A98DC9 /* LaunchScreen.storyboard */; };
 		8FA88A4B1DDCA93F00A98DC9 /* DotDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA88A4A1DDCA93F00A98DC9 /* DotDemoUITests.swift */; };
-		8FA88A541DDCAA8300A98DC9 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA88A531DDCAA8300A98DC9 /* CGRect.swift */; };
 		8FA88A551DDCADEB00A98DC9 /* Dot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA88A111DDCA88C00A98DC9 /* Dot.framework */; };
 		8FA88A561DDCADEB00A98DC9 /* Dot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA88A111DDCA88C00A98DC9 /* Dot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FCE7FB51DDDFA40003443C0 /* LayerDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE7FB41DDDFA40003443C0 /* LayerDot.swift */; };
@@ -45,6 +42,13 @@
 		8FD7D7A81DEED2B200D0A77C /* PullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7D7A71DEED2B200D0A77C /* PullViewController.swift */; };
 		8FD7D7AA1DEF158700D0A77C /* Move.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7D7A91DEF158700D0A77C /* Move.storyboard */; };
 		8FD7D7AC1DEF159000D0A77C /* MoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7D7AB1DEF159000D0A77C /* MoveViewController.swift */; };
+		8FD7D7B11DEF343900D0A77C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7D7B01DEF343900D0A77C /* Cartfile */; };
+		8FD7D7B51DEF355A00D0A77C /* Graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7D7B31DEF355A00D0A77C /* Graphics.framework */; };
+		8FD7D7B61DEF355A00D0A77C /* Arithmetic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7D7B41DEF355A00D0A77C /* Arithmetic.framework */; };
+		8FD7D7B71DEF357400D0A77C /* Graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7D7B31DEF355A00D0A77C /* Graphics.framework */; };
+		8FD7D7B81DEF357400D0A77C /* Graphics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7D7B31DEF355A00D0A77C /* Graphics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FD7D7B91DEF357400D0A77C /* Arithmetic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7D7B41DEF355A00D0A77C /* Arithmetic.framework */; };
+		8FD7D7BA1DEF357400D0A77C /* Arithmetic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD7D7B41DEF355A00D0A77C /* Arithmetic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8FA88A561DDCADEB00A98DC9 /* Dot.framework in Embed Frameworks */,
+				8FD7D7B81DEF357400D0A77C /* Graphics.framework in Embed Frameworks */,
+				8FD7D7BA1DEF357400D0A77C /* Arithmetic.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,11 +97,9 @@
 		8F3488AC1DDDE369000E9A86 /* Animate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Animate.storyboard; sourceTree = "<group>"; };
 		8F3488AE1DDDE537000E9A86 /* Trace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trace.storyboard; sourceTree = "<group>"; };
 		8F3488B01DDDE560000E9A86 /* TraceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraceViewController.swift; sourceTree = "<group>"; };
-		8F3488B21DDDE7DB000E9A86 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		8F3488B41DDDECB6000E9A86 /* MaskDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskDot.swift; sourceTree = "<group>"; };
 		8F4B05ED1DE5C03400FB045B /* DotLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotLayer.swift; sourceTree = "<group>"; };
 		8F4B05EF1DE5C15200FB045B /* DrawnLayerDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawnLayerDotView.swift; sourceTree = "<group>"; };
-		8F4B05F11DE5C1BE00FB045B /* CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGColor.swift; sourceTree = "<group>"; };
 		8F4B05F31DE5CADE00FB045B /* ShapeDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeDotView.swift; sourceTree = "<group>"; };
 		8F4B05F51DE5DA9B00FB045B /* CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPath.swift; sourceTree = "<group>"; };
 		8F4B05F71DE639DF00FB045B /* DotLayerPathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotLayerPathView.swift; sourceTree = "<group>"; };
@@ -120,7 +124,6 @@
 		8FA88A461DDCA93F00A98DC9 /* DotDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA88A4A1DDCA93F00A98DC9 /* DotDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotDemoUITests.swift; sourceTree = "<group>"; };
 		8FA88A4C1DDCA93F00A98DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FA88A531DDCAA8300A98DC9 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		8FCE7FB41DDDFA40003443C0 /* LayerDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerDot.swift; sourceTree = "<group>"; };
 		8FCE7FB61DDDFDCE003443C0 /* ImageDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDot.swift; sourceTree = "<group>"; };
 		8FD7D7A11DE722EF00D0A77C /* WobbleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WobbleViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +132,9 @@
 		8FD7D7A71DEED2B200D0A77C /* PullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullViewController.swift; sourceTree = "<group>"; };
 		8FD7D7A91DEF158700D0A77C /* Move.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Move.storyboard; sourceTree = "<group>"; };
 		8FD7D7AB1DEF159000D0A77C /* MoveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveViewController.swift; sourceTree = "<group>"; };
+		8FD7D7B01DEF343900D0A77C /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		8FD7D7B31DEF355A00D0A77C /* Graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Graphics.framework; path = Carthage/Build/iOS/Graphics.framework; sourceTree = "<group>"; };
+		8FD7D7B41DEF355A00D0A77C /* Arithmetic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Arithmetic.framework; path = Carthage/Build/iOS/Arithmetic.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD7D7B51DEF355A00D0A77C /* Graphics.framework in Frameworks */,
+				8FD7D7B61DEF355A00D0A77C /* Arithmetic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FA88A551DDCADEB00A98DC9 /* Dot.framework in Frameworks */,
+				8FD7D7B71DEF357400D0A77C /* Graphics.framework in Frameworks */,
+				8FD7D7B91DEF357400D0A77C /* Arithmetic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,11 +178,13 @@
 		8FA88A071DDCA88C00A98DC9 = {
 			isa = PBXGroup;
 			children = (
+				8FD7D7B01DEF343900D0A77C /* Cartfile */,
 				8FA88A131DDCA88C00A98DC9 /* Dot */,
 				8FA88A1E1DDCA88C00A98DC9 /* DotTests */,
 				8FA88A341DDCA93E00A98DC9 /* DotDemo */,
 				8FA88A491DDCA93F00A98DC9 /* DotDemoUITests */,
 				8FA88A121DDCA88C00A98DC9 /* Products */,
+				8FD7D7B21DEF355900D0A77C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,9 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				8FA88A141DDCA88C00A98DC9 /* Dot.h */,
-				8FA88A531DDCAA8300A98DC9 /* CGRect.swift */,
-				8F3488B21DDDE7DB000E9A86 /* CGPoint.swift */,
-				8F4B05F11DE5C1BE00FB045B /* CGColor.swift */,
 				8F4B05F51DE5DA9B00FB045B /* CGPath.swift */,
 				8FA88A151DDCA88C00A98DC9 /* Info.plist */,
 				8FA88A2D1DDCA8AC00A98DC9 /* DotView.swift */,
@@ -252,6 +261,15 @@
 				8FA88A4C1DDCA93F00A98DC9 /* Info.plist */,
 			);
 			path = DotDemoUITests;
+			sourceTree = "<group>";
+		};
+		8FD7D7B21DEF355900D0A77C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FD7D7B31DEF355A00D0A77C /* Graphics.framework */,
+				8FD7D7B41DEF355A00D0A77C /* Arithmetic.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD7D7B11DEF343900D0A77C /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +460,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F3488B31DDDE7DB000E9A86 /* CGPoint.swift in Sources */,
 				8F4B05F01DE5C15200FB045B /* DrawnLayerDotView.swift in Sources */,
 				8F3488B51DDDECB6000E9A86 /* MaskDot.swift in Sources */,
 				8FA88A2E1DDCA8AC00A98DC9 /* DotView.swift in Sources */,
@@ -450,10 +468,8 @@
 				8F4B05EE1DE5C03400FB045B /* DotLayer.swift in Sources */,
 				8FCE7FB71DDDFDCE003443C0 /* ImageDot.swift in Sources */,
 				8FA0DE2F1DDEF86000EEF8A9 /* UpdatingDotView.swift in Sources */,
-				8FA88A541DDCAA8300A98DC9 /* CGRect.swift in Sources */,
 				8F4B05FC1DE6426F00FB045B /* RoundedDotView.swift in Sources */,
 				8F4B05FA1DE640BB00FB045B /* RoundedLayer.swift in Sources */,
-				8F4B05F21DE5C1BE00FB045B /* CGColor.swift in Sources */,
 				8FA0DE331DDF035000EEF8A9 /* DelegateDotView.swift in Sources */,
 				8F4B05F41DE5CADE00FB045B /* ShapeDotView.swift in Sources */,
 				8FCE7FB51DDDFA40003443C0 /* LayerDot.swift in Sources */,
@@ -641,6 +657,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Dot/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -662,6 +682,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Dot/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -704,6 +728,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DotDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.DotDemo";
@@ -718,6 +746,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DotDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.DotDemo";
