@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QxT-pA-W2K">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pull-->
+        <scene sceneID="3qc-l7-bhf">
+            <objects>
+                <viewController id="QxT-pA-W2K" customClass="PullViewController" customModule="DotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WSt-iy-aJ4"/>
+                        <viewControllerLayoutGuide type="bottom" id="hnv-G9-zW5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P8z-z4-DNC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCM-F9-jmZ" customClass="Dot" customModule="Dot">
+                                <rect key="frame" x="16" y="28" width="343" height="582"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="i3t-9d-1xs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="mvN-8M-JZC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.078431372550000003" green="0.58823529409999997" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="oCM-F9-jmZ" firstAttribute="bottom" secondItem="hnv-G9-zW5" secondAttribute="top" priority="900" constant="-8" id="fwZ-cj-eG8"/>
+                            <constraint firstItem="oCM-F9-jmZ" firstAttribute="trailing" secondItem="P8z-z4-DNC" secondAttribute="trailingMargin" priority="900" id="t9T-RD-sSu"/>
+                            <constraint firstItem="oCM-F9-jmZ" firstAttribute="leading" secondItem="P8z-z4-DNC" secondAttribute="leadingMargin" priority="900" id="vLS-fS-h4l"/>
+                            <constraint firstItem="oCM-F9-jmZ" firstAttribute="top" secondItem="WSt-iy-aJ4" secondAttribute="bottom" priority="900" constant="8" symbolic="YES" id="vbd-Ur-wxL"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Vmc-RS-0yc" appends="YES" id="GWj-CP-uWG"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pull" id="Mn2-Vw-dQh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bottom" destination="fwZ-cj-eG8" id="BP6-sV-M4X"/>
+                        <outlet property="dot" destination="oCM-F9-jmZ" id="WPD-Sh-jws"/>
+                        <outlet property="leading" destination="vLS-fS-h4l" id="dM1-Tc-kLG"/>
+                        <outlet property="top" destination="vbd-Ur-wxL" id="dIW-GB-YcL"/>
+                        <outlet property="trailing" destination="t9T-RD-sSu" id="I9p-4U-EBw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOf-wU-xcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Vmc-RS-0yc">
+                    <connections>
+                        <action selector="handlePan:" destination="QxT-pA-W2K" id="eg4-Oo-Kt2"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="38" y="-61"/>
+        </scene>
+    </scenes>
+</document>

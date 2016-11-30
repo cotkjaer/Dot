@@ -14,25 +14,7 @@ class RoundedLayer: CALayer
         {
         set
         {
-            //            path = UIBezierPath(ovalIn: super.bounds).cgPath
-            
             let updatedRadius = min(newValue.width, newValue.height) / 2
-//            
-//            if let b = action(forKey: "backgroundColor") as? CABasicAnimation
-//            {
-//                let radius = presentation()?.cornerRadius ?? cornerRadius
-//                b.keyPath = "cornerRadius"
-//                b.fromValue = radius
-//                b.toValue = nil
-//                b.fillMode = kCAFillModeRemoved
-//                
-//                cornerRadius = updatedRadius
-//                add(b, forKey: "cornerRadius")
-//            }
-//            else
-//            {
-//                cornerRadius = updatedRadius
-//            }
             super.cornerRadius = updatedRadius
             super.bounds = newValue
         }
@@ -42,29 +24,45 @@ class RoundedLayer: CALayer
         }
     }
     
-    override func add(_ anim: CAAnimation, forKey key: String?)
+    override func add(_ anim: CAAnimation, forKey optionalKey: String?)
     {
-        guard let k = key, k.hasPrefix("bounds.size") == true, let a = anim.copy() as? CABasicAnimation else { super.add(anim, forKey: key); return }
+        guard let key = optionalKey, key.hasPrefix("bounds.size") == true, let cornerRadiusAnimation = anim.copy() as? CABasicAnimation else { super.add(anim, forKey: optionalKey); return }
    
-        let groupKeySuffix = k.substring(from: k.index(k.startIndex, offsetBy: 11))
+        let groupKeySuffix = key.substring(from: key.index(key.startIndex, offsetBy: 11))
         
-        a.keyPath = "cornerRadius"
-        if let fromSize = a.fromValue as? CGSize
+        cornerRadiusAnimation.keyPath = "cornerRadius"
+        
+        print("bounds.size: \(bounds.size), cornerRadius: \(cornerRadius)")
+        
+        if let p = presentation()
         {
-            a.fromValue = min(fromSize.width, fromSize.height) / 2
+            print("presentation - bounds.size: \(p.bounds.size), cornerRadius: \(p.cornerRadius)")
+        }
+        
+        if let fromSize = cornerRadiusAnimation.fromValue as? CGSize
+        {
+            let fromValue = min(fromSize.width, fromSize.height) / 2
+            
+            cornerRadiusAnimation.fromValue =  fromValue
+            
+            print("fromSize: \(fromSize), toValue: \(fromValue)")
         }
         else
         {
-            a.fromValue = nil
+            cornerRadiusAnimation.fromValue = nil
         }
         
-        if let toSize = a.toValue as? CGSize
+        if let toSize = cornerRadiusAnimation.toValue as? CGSize
         {
-            a.toValue = min(toSize.width, toSize.height) / 2
+            let toValue = min(toSize.width, toSize.height) / 2
+            
+            cornerRadiusAnimation.toValue = toValue
+            
+            print("toSize: \(toSize), toValue: \(toValue)")
         }
         else
         {
-            a.toValue = nil
+            cornerRadiusAnimation.toValue = nil
         }
         
         let group = CAAnimationGroup()
@@ -76,7 +74,7 @@ class RoundedLayer: CALayer
         //        group.fillMode = anim.fillMode
         group.duration = anim.duration
         
-        group.animations = [anim,a]
+        group.animations = [anim,cornerRadiusAnimation]
         
         add(group, forKey: "cornerRadius+bounds.size" + groupKeySuffix)
     }

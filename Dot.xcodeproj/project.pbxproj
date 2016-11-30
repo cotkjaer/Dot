@@ -41,6 +41,10 @@
 		8FCE7FB71DDDFDCE003443C0 /* ImageDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE7FB61DDDFDCE003443C0 /* ImageDot.swift */; };
 		8FD7D7A21DE722EF00D0A77C /* WobbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7D7A11DE722EF00D0A77C /* WobbleViewController.swift */; };
 		8FD7D7A41DE722F900D0A77C /* Wobble.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7D7A31DE722F900D0A77C /* Wobble.storyboard */; };
+		8FD7D7A61DEED2A700D0A77C /* Pull.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7D7A51DEED2A700D0A77C /* Pull.storyboard */; };
+		8FD7D7A81DEED2B200D0A77C /* PullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7D7A71DEED2B200D0A77C /* PullViewController.swift */; };
+		8FD7D7AA1DEF158700D0A77C /* Move.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7D7A91DEF158700D0A77C /* Move.storyboard */; };
+		8FD7D7AC1DEF159000D0A77C /* MoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7D7AB1DEF159000D0A77C /* MoveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +125,10 @@
 		8FCE7FB61DDDFDCE003443C0 /* ImageDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDot.swift; sourceTree = "<group>"; };
 		8FD7D7A11DE722EF00D0A77C /* WobbleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WobbleViewController.swift; sourceTree = "<group>"; };
 		8FD7D7A31DE722F900D0A77C /* Wobble.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wobble.storyboard; sourceTree = "<group>"; };
+		8FD7D7A51DEED2A700D0A77C /* Pull.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pull.storyboard; sourceTree = "<group>"; };
+		8FD7D7A71DEED2B200D0A77C /* PullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullViewController.swift; sourceTree = "<group>"; };
+		8FD7D7A91DEF158700D0A77C /* Move.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Move.storyboard; sourceTree = "<group>"; };
+		8FD7D7AB1DEF159000D0A77C /* MoveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +234,10 @@
 				8F3488B01DDDE560000E9A86 /* TraceViewController.swift */,
 				8FD7D7A31DE722F900D0A77C /* Wobble.storyboard */,
 				8FD7D7A11DE722EF00D0A77C /* WobbleViewController.swift */,
+				8FD7D7A51DEED2A700D0A77C /* Pull.storyboard */,
+				8FD7D7A71DEED2B200D0A77C /* PullViewController.swift */,
+				8FD7D7A91DEF158700D0A77C /* Move.storyboard */,
+				8FD7D7AB1DEF159000D0A77C /* MoveViewController.swift */,
 				8FA88A3C1DDCA93F00A98DC9 /* Assets.xcassets */,
 				8FA88A3E1DDCA93F00A98DC9 /* LaunchScreen.storyboard */,
 				8FA88A411DDCA93F00A98DC9 /* Info.plist */,
@@ -406,7 +418,9 @@
 				8F3488AF1DDDE537000E9A86 /* Trace.storyboard in Resources */,
 				8FA88A401DDCA93F00A98DC9 /* LaunchScreen.storyboard in Resources */,
 				8FD7D7A41DE722F900D0A77C /* Wobble.storyboard in Resources */,
+				8FD7D7A61DEED2A700D0A77C /* Pull.storyboard in Resources */,
 				8FA88A3D1DDCA93F00A98DC9 /* Assets.xcassets in Resources */,
+				8FD7D7AA1DEF158700D0A77C /* Move.storyboard in Resources */,
 				8F3488AD1DDDE369000E9A86 /* Animate.storyboard in Resources */,
 				8F3488A91DDDD2DF000E9A86 /* Tap.storyboard in Resources */,
 				8FA88A3B1DDCA93E00A98DC9 /* Main.storyboard in Resources */,
@@ -459,8 +473,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FA88A381DDCA93E00A98DC9 /* AnimateViewController.swift in Sources */,
+				8FD7D7A81DEED2B200D0A77C /* PullViewController.swift in Sources */,
 				8FD7D7A21DE722EF00D0A77C /* WobbleViewController.swift in Sources */,
 				8FA88A361DDCA93E00A98DC9 /* AppDelegate.swift in Sources */,
+				8FD7D7AC1DEF159000D0A77C /* MoveViewController.swift in Sources */,
 				8F3488B11DDDE560000E9A86 /* TraceViewController.swift in Sources */,
 				8F3488AB1DDDD2FB000E9A86 /* TapViewController.swift in Sources */,
 			);

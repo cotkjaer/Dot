@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bb3-2K-Tr9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Move-->
+        <scene sceneID="RcZ-Aq-YdI">
+            <objects>
+                <viewController id="bb3-2K-Tr9" customClass="MoveViewController" customModule="DotDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qIa-c1-gIa"/>
+                        <viewControllerLayoutGuide type="bottom" id="RhH-u3-Nog"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7io-cS-EXt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ijn-W9-JtO" customClass="Dot" customModule="Dot">
+                                <rect key="frame" x="-35" y="-35" width="70" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ijn-W9-JtO" secondAttribute="height" multiplier="1:1" id="0z3-TW-NV9"/>
+                                    <constraint firstAttribute="width" priority="999" constant="70" id="VgZ-99-tvh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Ijn-W9-JtO" firstAttribute="centerY" secondItem="7io-cS-EXt" secondAttribute="top" priority="999" id="Uiz-yB-Yew"/>
+                            <constraint firstItem="Ijn-W9-JtO" firstAttribute="centerX" secondItem="7io-cS-EXt" secondAttribute="leading" priority="999" id="uuM-8j-HHH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6Oh-Z5-cTX" appends="YES" id="UMB-ja-KAl"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Move" id="MW7-kW-tPj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dot" destination="Ijn-W9-JtO" id="rjm-Xs-Zxf"/>
+                        <outlet property="horizontal" destination="uuM-8j-HHH" id="WSh-HZ-dgn"/>
+                        <outlet property="vertical" destination="Uiz-yB-Yew" id="TXb-gL-R8h"/>
+                        <outlet property="width" destination="VgZ-99-tvh" id="MeT-94-1TO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fS-aQ-8w6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6Oh-Z5-cTX">
+                    <connections>
+                        <action selector="handleTap:" destination="bb3-2K-Tr9" id="csp-Fc-R7J"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="132" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+</document>
