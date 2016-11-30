@@ -15,10 +15,10 @@ class TraceViewController: UIViewController
 
     func addDot(at location: CGPoint)
     {
-        let dot = Dot(frame: CGRect(center: location, size: CGSize(width: 0, height: 0)))
+        let dot = Dot(frame: CGRect(center: location, size: .zero))
         
         dot.backgroundColor = .clear
-        dot.color = .purple
+        dot.fillColor = .purple
         dot.alpha = 0.5
         
         view.addSubview(dot)
@@ -45,7 +45,7 @@ class TraceViewController: UIViewController
                     dot.frame = CGRect(center: location, size: CGSize(width: 3, height: 3))
 
                 }, completion: { (completed) in
-                    dot.color = .black
+                    dot.fillColor = .black
             })
         }
     }

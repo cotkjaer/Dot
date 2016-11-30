@@ -9,8 +9,7 @@
 import Foundation
 
 open class MaskDot: UpdatingDotView
-{
-    
+{   
     open override func updateView()
     {
         let b = layer.presentation()?.bounds ?? layer.bounds

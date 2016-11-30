@@ -26,20 +26,29 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZF-ej-zbj">
                                 <rect key="frame" x="16" y="28" width="343" height="421"/>
                                 <subviews>
-                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="P5M-3W-qOx" customClass="Dot" customModule="Dot">
+                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="P5M-3W-qOx" customClass="Dot" customModule="Dot">
                                         <rect key="frame" x="52" y="90.5" width="240" height="240"/>
-                                        <color key="backgroundColor" red="0.078431372550000003" green="0.58823529409999997" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="P5M-3W-qOx" secondAttribute="height" multiplier="1:1" id="lMC-mX-MS1"/>
                                             <constraint firstAttribute="width" priority="900" constant="240" id="pcV-zo-dNU"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.0" green="0.68627450980000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="P5M-3W-qOx" firstAttribute="centerY" secondItem="ZZF-ej-zbj" secondAttribute="centerY" id="Y6L-8i-c5s"/>
                                     <constraint firstItem="P5M-3W-qOx" firstAttribute="centerX" secondItem="ZZF-ej-zbj" secondAttribute="centerX" id="jci-xQ-diA"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ois-Uj-zKf" appends="YES" id="MEW-NJ-Vw5"/>
+                                </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qub-Zh-WFY">
                                 <rect key="frame" x="20" y="457" width="335" height="210"/>
@@ -154,6 +163,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5t-Eq-Tai" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ois-Uj-zKf">
+                    <connections>
+                        <action selector="handle:" destination="OAd-7Q-TLq" id="qlX-6B-z3T"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-394.39999999999998" y="-106.59670164917542"/>
         </scene>

@@ -14,8 +14,15 @@
 		8F3488B11DDDE560000E9A86 /* TraceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3488B01DDDE560000E9A86 /* TraceViewController.swift */; };
 		8F3488B31DDDE7DB000E9A86 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3488B21DDDE7DB000E9A86 /* CGPoint.swift */; };
 		8F3488B51DDDECB6000E9A86 /* MaskDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3488B41DDDECB6000E9A86 /* MaskDot.swift */; };
+		8F4B05EE1DE5C03400FB045B /* DotLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05ED1DE5C03400FB045B /* DotLayer.swift */; };
+		8F4B05F01DE5C15200FB045B /* DrawnLayerDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05EF1DE5C15200FB045B /* DrawnLayerDotView.swift */; };
+		8F4B05F21DE5C1BE00FB045B /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05F11DE5C1BE00FB045B /* CGColor.swift */; };
+		8F4B05F41DE5CADE00FB045B /* ShapeDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05F31DE5CADE00FB045B /* ShapeDotView.swift */; };
+		8F4B05F61DE5DA9B00FB045B /* CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05F51DE5DA9B00FB045B /* CGPath.swift */; };
+		8F4B05F81DE639DF00FB045B /* DotLayerPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05F71DE639DF00FB045B /* DotLayerPathView.swift */; };
+		8F4B05FA1DE640BB00FB045B /* RoundedLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05F91DE640BB00FB045B /* RoundedLayer.swift */; };
+		8F4B05FC1DE6426F00FB045B /* RoundedDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B05FB1DE6426F00FB045B /* RoundedDotView.swift */; };
 		8FA0DE2F1DDEF86000EEF8A9 /* UpdatingDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0DE2E1DDEF86000EEF8A9 /* UpdatingDotView.swift */; };
-		8FA0DE311DDEF95B00EEF8A9 /* CornerDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0DE301DDEF95B00EEF8A9 /* CornerDot.swift */; };
 		8FA0DE331DDF035000EEF8A9 /* DelegateDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0DE321DDF035000EEF8A9 /* DelegateDotView.swift */; };
 		8FA88A1B1DDCA88C00A98DC9 /* Dot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA88A111DDCA88C00A98DC9 /* Dot.framework */; };
 		8FA88A201DDCA88C00A98DC9 /* DotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA88A1F1DDCA88C00A98DC9 /* DotTests.swift */; };
@@ -32,6 +39,8 @@
 		8FA88A561DDCADEB00A98DC9 /* Dot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA88A111DDCA88C00A98DC9 /* Dot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FCE7FB51DDDFA40003443C0 /* LayerDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE7FB41DDDFA40003443C0 /* LayerDot.swift */; };
 		8FCE7FB71DDDFDCE003443C0 /* ImageDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE7FB61DDDFDCE003443C0 /* ImageDot.swift */; };
+		8FD7D7A21DE722EF00D0A77C /* WobbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7D7A11DE722EF00D0A77C /* WobbleViewController.swift */; };
+		8FD7D7A41DE722F900D0A77C /* Wobble.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD7D7A31DE722F900D0A77C /* Wobble.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +89,15 @@
 		8F3488B01DDDE560000E9A86 /* TraceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraceViewController.swift; sourceTree = "<group>"; };
 		8F3488B21DDDE7DB000E9A86 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		8F3488B41DDDECB6000E9A86 /* MaskDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskDot.swift; sourceTree = "<group>"; };
+		8F4B05ED1DE5C03400FB045B /* DotLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotLayer.swift; sourceTree = "<group>"; };
+		8F4B05EF1DE5C15200FB045B /* DrawnLayerDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawnLayerDotView.swift; sourceTree = "<group>"; };
+		8F4B05F11DE5C1BE00FB045B /* CGColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGColor.swift; sourceTree = "<group>"; };
+		8F4B05F31DE5CADE00FB045B /* ShapeDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeDotView.swift; sourceTree = "<group>"; };
+		8F4B05F51DE5DA9B00FB045B /* CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPath.swift; sourceTree = "<group>"; };
+		8F4B05F71DE639DF00FB045B /* DotLayerPathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotLayerPathView.swift; sourceTree = "<group>"; };
+		8F4B05F91DE640BB00FB045B /* RoundedLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLayer.swift; sourceTree = "<group>"; };
+		8F4B05FB1DE6426F00FB045B /* RoundedDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedDotView.swift; sourceTree = "<group>"; };
 		8FA0DE2E1DDEF86000EEF8A9 /* UpdatingDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatingDotView.swift; sourceTree = "<group>"; };
-		8FA0DE301DDEF95B00EEF8A9 /* CornerDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerDot.swift; sourceTree = "<group>"; };
 		8FA0DE321DDF035000EEF8A9 /* DelegateDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateDotView.swift; sourceTree = "<group>"; };
 		8FA88A111DDCA88C00A98DC9 /* Dot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA88A141DDCA88C00A98DC9 /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
@@ -103,6 +119,8 @@
 		8FA88A531DDCAA8300A98DC9 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		8FCE7FB41DDDFA40003443C0 /* LayerDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerDot.swift; sourceTree = "<group>"; };
 		8FCE7FB61DDDFDCE003443C0 /* ImageDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDot.swift; sourceTree = "<group>"; };
+		8FD7D7A11DE722EF00D0A77C /* WobbleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WobbleViewController.swift; sourceTree = "<group>"; };
+		8FD7D7A31DE722F900D0A77C /* Wobble.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wobble.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,16 +183,23 @@
 			isa = PBXGroup;
 			children = (
 				8FA88A141DDCA88C00A98DC9 /* Dot.h */,
+				8FA88A531DDCAA8300A98DC9 /* CGRect.swift */,
+				8F3488B21DDDE7DB000E9A86 /* CGPoint.swift */,
+				8F4B05F11DE5C1BE00FB045B /* CGColor.swift */,
+				8F4B05F51DE5DA9B00FB045B /* CGPath.swift */,
 				8FA88A151DDCA88C00A98DC9 /* Info.plist */,
 				8FA88A2D1DDCA8AC00A98DC9 /* DotView.swift */,
 				8FA0DE2E1DDEF86000EEF8A9 /* UpdatingDotView.swift */,
-				8FA88A531DDCAA8300A98DC9 /* CGRect.swift */,
-				8F3488B21DDDE7DB000E9A86 /* CGPoint.swift */,
-				8FA0DE301DDEF95B00EEF8A9 /* CornerDot.swift */,
 				8F3488B41DDDECB6000E9A86 /* MaskDot.swift */,
 				8FCE7FB41DDDFA40003443C0 /* LayerDot.swift */,
+				8F4B05ED1DE5C03400FB045B /* DotLayer.swift */,
+				8F4B05EF1DE5C15200FB045B /* DrawnLayerDotView.swift */,
 				8FA0DE321DDF035000EEF8A9 /* DelegateDotView.swift */,
+				8F4B05F31DE5CADE00FB045B /* ShapeDotView.swift */,
+				8F4B05F71DE639DF00FB045B /* DotLayerPathView.swift */,
 				8FCE7FB61DDDFDCE003443C0 /* ImageDot.swift */,
+				8F4B05F91DE640BB00FB045B /* RoundedLayer.swift */,
+				8F4B05FB1DE6426F00FB045B /* RoundedDotView.swift */,
 			);
 			path = Dot;
 			sourceTree = "<group>";
@@ -199,6 +224,8 @@
 				8FA88A371DDCA93E00A98DC9 /* AnimateViewController.swift */,
 				8F3488AE1DDDE537000E9A86 /* Trace.storyboard */,
 				8F3488B01DDDE560000E9A86 /* TraceViewController.swift */,
+				8FD7D7A31DE722F900D0A77C /* Wobble.storyboard */,
+				8FD7D7A11DE722EF00D0A77C /* WobbleViewController.swift */,
 				8FA88A3C1DDCA93F00A98DC9 /* Assets.xcassets */,
 				8FA88A3E1DDCA93F00A98DC9 /* LaunchScreen.storyboard */,
 				8FA88A411DDCA93F00A98DC9 /* Info.plist */,
@@ -378,6 +405,7 @@
 			files = (
 				8F3488AF1DDDE537000E9A86 /* Trace.storyboard in Resources */,
 				8FA88A401DDCA93F00A98DC9 /* LaunchScreen.storyboard in Resources */,
+				8FD7D7A41DE722F900D0A77C /* Wobble.storyboard in Resources */,
 				8FA88A3D1DDCA93F00A98DC9 /* Assets.xcassets in Resources */,
 				8F3488AD1DDDE369000E9A86 /* Animate.storyboard in Resources */,
 				8F3488A91DDDD2DF000E9A86 /* Tap.storyboard in Resources */,
@@ -400,13 +428,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3488B31DDDE7DB000E9A86 /* CGPoint.swift in Sources */,
+				8F4B05F01DE5C15200FB045B /* DrawnLayerDotView.swift in Sources */,
 				8F3488B51DDDECB6000E9A86 /* MaskDot.swift in Sources */,
 				8FA88A2E1DDCA8AC00A98DC9 /* DotView.swift in Sources */,
+				8F4B05F81DE639DF00FB045B /* DotLayerPathView.swift in Sources */,
+				8F4B05F61DE5DA9B00FB045B /* CGPath.swift in Sources */,
+				8F4B05EE1DE5C03400FB045B /* DotLayer.swift in Sources */,
 				8FCE7FB71DDDFDCE003443C0 /* ImageDot.swift in Sources */,
-				8FA0DE311DDEF95B00EEF8A9 /* CornerDot.swift in Sources */,
 				8FA0DE2F1DDEF86000EEF8A9 /* UpdatingDotView.swift in Sources */,
 				8FA88A541DDCAA8300A98DC9 /* CGRect.swift in Sources */,
+				8F4B05FC1DE6426F00FB045B /* RoundedDotView.swift in Sources */,
+				8F4B05FA1DE640BB00FB045B /* RoundedLayer.swift in Sources */,
+				8F4B05F21DE5C1BE00FB045B /* CGColor.swift in Sources */,
 				8FA0DE331DDF035000EEF8A9 /* DelegateDotView.swift in Sources */,
+				8F4B05F41DE5CADE00FB045B /* ShapeDotView.swift in Sources */,
 				8FCE7FB51DDDFA40003443C0 /* LayerDot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FA88A381DDCA93E00A98DC9 /* AnimateViewController.swift in Sources */,
+				8FD7D7A21DE722EF00D0A77C /* WobbleViewController.swift in Sources */,
 				8FA88A361DDCA93E00A98DC9 /* AppDelegate.swift in Sources */,
 				8F3488B11DDDE560000E9A86 /* TraceViewController.swift in Sources */,
 				8F3488AB1DDDD2FB000E9A86 /* TapViewController.swift in Sources */,

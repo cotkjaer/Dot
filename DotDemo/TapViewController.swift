@@ -20,7 +20,7 @@ class TapViewController: UIViewController {
 //        dot.animatable = true
         
         dot.backgroundColor = .clear
-        dot.color = .orange
+        dot.fillColor = .orange
         dot.alpha = 0.5
 //        dot.isUserInteractionEnabled = false
         
@@ -36,7 +36,8 @@ class TapViewController: UIViewController {
             {
                 dot.frame = CGRect(center: location, size: CGSize(width: 40, height: 40))
                 dot.alpha = 1
-            })
+            },
+            completion:
         { (completed) in
                 
                 UIView.animate(
@@ -49,6 +50,6 @@ class TapViewController: UIViewController {
                     }, completion: { (completed) in
                         dot.removeFromSuperview()
                 })
-        }
+        })
     }
 }

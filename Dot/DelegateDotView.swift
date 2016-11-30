@@ -16,10 +16,12 @@ open class DelegateDotView : DotView
     {
         super.draw(layer, in: ctx)
         
+        guard let fillColor = fillColor else { return }
+        
         let path = UIBezierPath(ovalIn: layer.bounds).cgPath
         
         ctx.addPath(path)
-        ctx.setFillColor(color.cgColor)
+        ctx.setFillColor(fillColor.cgColor)
         ctx.fillPath()
     }
     

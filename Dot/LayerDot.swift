@@ -57,7 +57,7 @@ open class LayerDotView : UpdatingDotView
     
     override open func updateView()
     {
-        dotLayer.fillColor = color.cgColor
+        dotLayer.fillColor = fillColor?.cgColor
         
         let bounds = layer.presentation()?.bounds ?? layer.bounds
         

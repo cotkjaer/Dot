@@ -22,15 +22,15 @@ class AnimateViewController: UIViewController
         
         animate {
             self.hueSlider.value = 0.5
-            self.dot?.color = UIColor(hue: 0.5, saturation: 1, brightness: 0.8, alpha: 1)
+            self.dot?.fillColor = UIColor(hue: 0.5, saturation: 1, brightness: 0.8, alpha: 1)
         }
         
-        dot?.backgroundColor = .clear
+//        dot?.backgroundColor = .clear
     }
     
     @IBOutlet weak var box: UIView!
     
-    @IBOutlet weak var dot: DelegateDotView?
+    @IBOutlet weak var dot: Dot?
     @IBOutlet weak var dotWidth: NSLayoutConstraint?
     
     @IBOutlet weak var diameterSlider: UISlider!
@@ -45,7 +45,9 @@ class AnimateViewController: UIViewController
         switch sender
         {
         case diameterSlider:
-            bounce
+            
+//             bounce
+            animate
                 {
                     self.dotWidth?.constant = value
                     
@@ -56,8 +58,7 @@ class AnimateViewController: UIViewController
             
             animate {
                 
-                self.dot?.color = UIColor(hue: value, saturation: 1, brightness: 0.8, alpha: 1)
-//                self.dot?.backgroundColor = UIColor(hue: value, saturation: 1, brightness: 0.8, alpha: 1)
+                self.dot?.fillColor = UIColor(hue: value, saturation: 1, brightness: 0.8, alpha: 1)
             }
             
         case alphaSlider:
@@ -68,6 +69,25 @@ class AnimateViewController: UIViewController
         default:
             break
         }
+    }
+    @IBAction func handle(_ tap: UITapGestureRecognizer)
+    {
+        guard tap.state == .ended else { return }
+        
+        let location = tap.location(in: tap.view)
+        
+        bounce
+            {
+                self.diameterSlider.value = Float(location.x)
+                self.dotWidth?.constant = location.x
+                self.dot?.layer.borderWidth = location.x / 20
+                
+                self.dot?.layer.borderColor = UIColor.orange.cgColor
+                
+                tap.view?.layoutIfNeeded()
+        }
+
+        
     }
     
     func animate(animations: @escaping ()->())
@@ -85,10 +105,7 @@ class AnimateViewController: UIViewController
             options: .beginFromCurrentState,
             animations: animations)
         { (completed) in
-            
-//            self.dot?.updateDotImage()
-            
-            debugPrint("completed: \(completed)")
+            // NOOP
         }
     }
 }

@@ -11,7 +11,7 @@ import UIKit
 //public typealias Dot = DelegateDotView
 
 /// Should be a type-alias, but interface builder cannot use typealiases 
-public class Dot : DelegateDotView
+public class Dot : RoundedDotView
 {
     
 }
@@ -22,15 +22,21 @@ open class DotView : UIView
 {
     /// The color of the dot
     @IBInspectable
-    open var color : UIColor = .orange
-        {
-        didSet { if oldValue != color { setNeedsDisplay() } }
-    }
+    open var fillColor : UIColor?
+    
+    /// The color of the dot
+    @IBInspectable
+    open var borderColor : UIColor?
+    
+    /// The color of the dot
+    @IBInspectable
+    open var borderWidth : CGFloat = 0
     
     // MARK: - Interface Builder
     
     override open func prepareForInterfaceBuilder()
     {
+        super.prepareForInterfaceBuilder()
         setNeedsDisplay()
     }
     

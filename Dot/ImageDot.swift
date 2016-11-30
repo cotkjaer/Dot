@@ -12,9 +12,9 @@ open class ImageDotView: DotView
 {
     private let imageView = UIImageView(frame: .zero)
     
-    open override var color: UIColor
+    open override var fillColor: UIColor?
     {
-        set { imageView.tintColor = newValue }
+        set { imageView.tintColor = newValue ?? .clear }
         get { return imageView.tintColor }
     }
     
