@@ -71,7 +71,6 @@ class RoundedLayer: CALayer
         group.delegate = anim.delegate
         group.beginTime = anim.beginTime
         
-        //        group.fillMode = anim.fillMode
         group.duration = anim.duration
         
         group.animations = [anim,cornerRadiusAnimation]
